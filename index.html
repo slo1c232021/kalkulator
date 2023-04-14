@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaslkulator</title>
+    <script>
+        function dodawanie()
+        {
+            var a= document.getElementById("a").value;
+            var b= document.getElementById("b").value;
+            var wynik1=a+b;
+            decument.getElementById("wynik").innerHTML=wynik1;
+        }
+
+        function odejmowanie()
+        {
+            var a= document.getElementById("a").value;
+            var b= document.getElementById("b").value;
+            var wynik2=a-b;
+            decument.getElementById("wynik").innerHTML=wynik2;
+        }
+        function mnozenie()
+        {
+            var a= document.getElementById("a").value;
+            var b= document.getElementById("b").value;
+            var wynik3=a*b;
+            decument.getElementById("wynik").innerHTML=wynik3;
+        }
+        function dzielenie()
+        {
+            var a= document.getElementById("a").value;
+            var b= document.getElementById("b").value;
+            var wynik4=a/b;
+            decument.getElementById("wynik").innerHTML=wynik4;
+        }
+        function potegowanie()
+        {
+            var a= document.getElementById("a").value;
+            var b= document.getElementById("b").value;
+            var wynik5=Math.pow(a,b)
+            decument.getElementById("wynik").innerHTML=wynik5;
+        }
+    </script>
+</head>
+<body>
+    <h1> Bardzo prosty kalkulator</h1>
+    <p>Podaj a=</p>
+    <input type = "text" id="a">
+    <p> Podaj b=</p>
+    <input type= "text" id="b">
+    <button onclick="dodawanie()">DODAJ</button>
+    <button onclick="odejmowanie()">ODEJMIJ</button>
+    <button onclick="mnozenie()">MNÓŻ</button>
+    <button onclick="dzielenie()">DZIEL</button>
+    <button onclick="potegowanie()">POTEGUJ</button><br><br>
+    <div id="wynik  ">TU BEDA WYNIKI</div>
+
+
+
+</body>
+</html>
